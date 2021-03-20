@@ -1,10 +1,9 @@
 package com.example.homework1java.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.homework1java.R;
 import com.example.homework1java.interfaces.Activity1FragmentCommunication;

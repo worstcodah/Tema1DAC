@@ -4,5 +4,4 @@ public interface Activity1FragmentCommunication {
     void openSecondActivity();
 
 
-
 }

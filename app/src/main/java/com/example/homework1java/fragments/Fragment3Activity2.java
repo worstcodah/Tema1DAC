@@ -13,16 +13,11 @@ import com.example.homework1java.R;
 public class Fragment3Activity2 extends Fragment {
 
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment3_activity2, container, false);
-
-
-
-
 
 
     }
