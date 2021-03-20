@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Homework1Java</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment1_a1_button_name">To Activity 2</string>
+    <string name="fragment1_a2_button_name">Add Fragment 2 (which belongs to Activity 2)</string>
+    <string name="fragment2_a2_button1_name">Replace F2A2 with F3A2</string>
+    <string name="fragment2_a2_button2_name">Go back to F1A2</string>
+    <string name="fragment2_a2_button3_name">Close this Activity</string>
+    <string name="fragment3_a2_button_name">F3A2</string>
+
+</resources>
