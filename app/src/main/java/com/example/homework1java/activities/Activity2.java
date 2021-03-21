@@ -16,9 +16,8 @@ import com.example.homework1java.interfaces.Activity2FragmentCommunication;
 public class Activity2 extends AppCompatActivity implements Activity2FragmentCommunication {
 
 
-    private final String F3A2_TAG="F3A2";
-    private final String F2A2_TAG="F2A2";
-    private final String F1A2_TAG="F1A2";
+    private final String F3A2_TAG = "F3A2";
+    private final String F2A2_TAG = "F2A2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +33,8 @@ public class Activity2 extends AppCompatActivity implements Activity2FragmentCom
     public void addF1A2() {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.frameLayout2, new Fragment1Activity2(), F1A2_TAG);
+        String f1A2_TAG = "F1A2";
+        fragmentTransaction.add(R.id.frameLayout2, new Fragment1Activity2(), f1A2_TAG);
         fragmentTransaction.commit();
 
     }
@@ -50,21 +50,18 @@ public class Activity2 extends AppCompatActivity implements Activity2FragmentCom
 
     @Override
     public void addF2A2() {
-        Button fragmentButton = findViewById(R.id.fragment1Activity2);
-        fragmentButton.setOnClickListener(v -> {
-            Fragment2Activity2 fragment2Activity2 = new Fragment2Activity2();
-
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            assert getFragmentManager() != null;
-            FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-            fragmentTransaction.add(R.id.frameLayout2, fragment2Activity2, F2A2_TAG);
 
 
-            fragmentTransaction.addToBackStack(F2A2_TAG);
+        Fragment2Activity2 fragment2Activity2 = new Fragment2Activity2();
 
-            fragmentTransaction.commit();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        assert getFragmentManager() != null;
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.add(R.id.frameLayout2, fragment2Activity2, F2A2_TAG);
+        fragmentTransaction.addToBackStack(F2A2_TAG);
+        fragmentTransaction.commit();
 
-        });
+
     }
 
     @Override
