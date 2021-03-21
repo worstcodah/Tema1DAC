@@ -15,7 +15,9 @@ import com.example.homework1java.interfaces.IActivity2FragmentCommunication;
 public class Activity2 extends AppCompatActivity implements IActivity2FragmentCommunication {
 
 
-    private final String F3A2_TAG = "F3A2";
+    static private final String F1A2_TAG = "F1A2";
+    static private final String F2A2_TAG = "F2A2";
+    static private final String F3A2_TAG = "F3A2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +33,7 @@ public class Activity2 extends AppCompatActivity implements IActivity2FragmentCo
     public void addF1A2() {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        final String f1A2_TAG = "F1A2";
-        fragmentTransaction.add(R.id.frameLayout2, new Fragment1Activity2(), f1A2_TAG);
+        fragmentTransaction.add(R.id.frameLayout2, new Fragment1Activity2(), F1A2_TAG);
         fragmentTransaction.commit();
 
     }
@@ -55,9 +56,9 @@ public class Activity2 extends AppCompatActivity implements IActivity2FragmentCo
         FragmentManager fragmentManager = getSupportFragmentManager();
         assert getFragmentManager() != null;
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        final String f2A2_TAG = "F2A2";
-        fragmentTransaction.add(R.id.frameLayout2, fragment2Activity2, f2A2_TAG);
-        fragmentTransaction.addToBackStack(f2A2_TAG);
+
+        fragmentTransaction.add(R.id.frameLayout2, fragment2Activity2, F2A2_TAG);
+        fragmentTransaction.addToBackStack(F2A2_TAG);
         fragmentTransaction.commit();
 
 
