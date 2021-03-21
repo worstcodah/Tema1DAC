@@ -1,6 +1,6 @@
 package com.example.homework1java.interfaces;
 
-public interface Activity1FragmentCommunication {
+public interface IActivity1FragmentCommunication {
     void openSecondActivity();
 
 

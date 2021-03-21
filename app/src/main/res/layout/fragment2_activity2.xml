@@ -4,12 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@color/red"
-    tools:context=".fragments.Fragment2Activity2"
-    android:orientation="vertical"
     android:layout_gravity="center"
+    android:background="@color/red"
     android:gravity="center"
-    >
+    android:orientation="vertical"
+    tools:context=".fragments.Fragment2Activity2">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -29,8 +28,8 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_gravity="center"
+        android:gravity="center"
 
         android:text="@string/fragment2_a2_button2_name"
         android:textSize="@dimen/text_size_f2a2" />
@@ -44,8 +43,6 @@
         android:gravity="center"
         android:text="@string/fragment2_a2_button3_name"
         android:textSize="@dimen/text_size_f2a2" />
-
-
 
 
 </LinearLayout>

@@ -7,8 +7,6 @@
     tools:context=".activities.Activity2">
 
 
-
-
     <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"

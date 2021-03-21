@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.homework1java.R;
-import com.example.homework1java.interfaces.Activity1FragmentCommunication;
+import com.example.homework1java.interfaces.IActivity1FragmentCommunication;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -34,7 +34,7 @@ public class Fragment1Activity1 extends Fragment {
 
 
     Button fragmentButton;
-    private Activity1FragmentCommunication activity1FragmentCommunication;
+    private IActivity1FragmentCommunication activity1FragmentCommunication;
 
 
     @Override
@@ -57,8 +57,8 @@ public class Fragment1Activity1 extends Fragment {
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        if (context instanceof Activity1FragmentCommunication) {
-            activity1FragmentCommunication = (Activity1FragmentCommunication) context;
+        if (context instanceof IActivity1FragmentCommunication) {
+            activity1FragmentCommunication = (IActivity1FragmentCommunication) context;
         }
     }
 

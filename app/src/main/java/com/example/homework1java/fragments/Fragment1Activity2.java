@@ -13,14 +13,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.homework1java.R;
-import com.example.homework1java.interfaces.Activity2FragmentCommunication;
+import com.example.homework1java.interfaces.IActivity2FragmentCommunication;
 
 
 public class Fragment1Activity2 extends Fragment {
 
 
     Button fragmentButton;
-    private Activity2FragmentCommunication activity2FragmentCommunication;
+    private IActivity2FragmentCommunication activity2FragmentCommunication;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -43,8 +43,8 @@ public class Fragment1Activity2 extends Fragment {
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
-        if (context instanceof Activity2FragmentCommunication) {
-            activity2FragmentCommunication = (Activity2FragmentCommunication) context;
+        if (context instanceof IActivity2FragmentCommunication) {
+            activity2FragmentCommunication = (IActivity2FragmentCommunication) context;
         }
     }
 

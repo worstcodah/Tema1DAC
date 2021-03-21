@@ -6,9 +6,9 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.homework1java.R;
-import com.example.homework1java.interfaces.Activity1FragmentCommunication;
+import com.example.homework1java.interfaces.IActivity1FragmentCommunication;
 
-public class Activity1 extends AppCompatActivity implements Activity1FragmentCommunication {
+public class Activity1 extends AppCompatActivity implements IActivity1FragmentCommunication {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
