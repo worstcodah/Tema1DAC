@@ -46,9 +46,10 @@ public class Fragment2Activity2 extends Fragment {
         button3.setOnClickListener(new View.OnClickListener() {
 
             public void onBackPressed() {
-                if(getActivity()!=null) {
+                if (getActivity() != null) {
                     getActivity().finish();
                 }
+
             }
 
 
