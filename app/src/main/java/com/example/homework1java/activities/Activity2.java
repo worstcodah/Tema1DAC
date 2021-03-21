@@ -42,8 +42,8 @@ public class Activity2 extends AppCompatActivity implements IActivity2FragmentCo
     @Override
     public void onBackPressed() {
         //finishAffinity();
-        //finish();
         moveTaskToBack(true);
+        finish();
     }
 
 
