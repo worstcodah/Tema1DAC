@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="default_margin">16dp</dimen>
+
     <dimen name="frame_layout_2_margin_top">300dp</dimen>
     <dimen name="f2a2_margin_top">100dp</dimen>
     <dimen name="text_size_f2a2">12sp</dimen>
