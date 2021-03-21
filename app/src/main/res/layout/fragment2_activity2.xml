@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/f2a2_margin_top"
-    tools:context=".fragments.Fragment2Activity2">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/red"
+    tools:context=".fragments.Fragment2Activity2"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -13,19 +18,22 @@
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
 
+        android:layout_gravity="center"
+        android:gravity="center"
         android:text="@string/fragment2_a2_button1_name"
-        android:textSize="10sp" />
+        android:textSize="12sp" />
 
     <Button
         android:id="@+id/button2"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:layout_gravity="center"
+
         android:text="@string/fragment2_a2_button2_name"
-        android:textSize="10sp" />
+        android:textSize="12sp" />
 
     <Button
         android:id="@+id/button3"
@@ -33,8 +41,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:gravity="center"
         android:text="@string/fragment2_a2_button3_name"
-        android:textSize="10sp" />
+        android:textSize="12sp" />
 
 
     <FrameLayout

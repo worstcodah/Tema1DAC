@@ -21,4 +21,6 @@ public class Fragment3Activity2 extends Fragment {
 
 
     }
+
+
 }
