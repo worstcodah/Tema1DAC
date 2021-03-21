@@ -22,7 +22,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="@string/fragment2_a2_button1_name"
-        android:textSize="12sp" />
+        android:textSize="@dimen/text_size_f2a2" />
 
     <Button
         android:id="@+id/button2"
@@ -33,7 +33,7 @@
         android:layout_gravity="center"
 
         android:text="@string/fragment2_a2_button2_name"
-        android:textSize="12sp" />
+        android:textSize="@dimen/text_size_f2a2" />
 
     <Button
         android:id="@+id/button3"
@@ -43,12 +43,9 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:text="@string/fragment2_a2_button3_name"
-        android:textSize="12sp" />
+        android:textSize="@dimen/text_size_f2a2" />
 
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/frameLayout3"/>
+
 
 </LinearLayout>

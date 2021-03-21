@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:text="@string/fragment1_a2_button_name"
         android:layout_gravity="center_vertical"
-        android:textSize="20sp"
+        android:textSize="@dimen/text_size_f1a2"
         />
 
 
